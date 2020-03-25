@@ -36,6 +36,7 @@ app.use(bodyParser.json());
 
 app.post('/giveInputs',(req,res)=>{
 	var best_price=16150;
+	var actual_price=16150;
 	var answers = req.body.answers;
 	for(let i=0;i<answers.length;i++)
 	{
@@ -49,7 +50,7 @@ app.post('/giveInputs',(req,res)=>{
 							best_price-=database[j].weightage;
 						console.log('best_price after')
 						if(database[j].type===2)
-							best_price-=(best_price)*(database[j].weightage);
+							best_price-=(actual_price)*(database[j].weightage);
 					}
 				}
 		}
