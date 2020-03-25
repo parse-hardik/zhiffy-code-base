@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 
 app.post('/giveInputs',(req,res)=>{
 	var best_price=16150;
-	var actual_price=16150;
+	var actual_price=39999;
 	var answers = req.body.answers;
 	for(let i=0;i<answers.length;i++)
 	{
