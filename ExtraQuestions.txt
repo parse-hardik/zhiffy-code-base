@@ -1,0 +1,163 @@
+Extra Questions.
+{
+						ques_id:'q015',
+						ques:'Does it have visible lines on screen/display is faded?',
+						type:2,						
+						noOfSubAttributes:2,
+						typeOfWeightage:'percent',
+						answer:1,
+						subAttributes:
+						[
+								
+								{
+									ques:'Multiple visible line(s) on Display'
+									id:'02',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Display faded along corners'
+									id:'02',
+									answer:1
+									weightage:0.4
+								},
+							
+						]
+					}
+					{
+						ques_id:'q016',
+						ques:'Is the screens(not phone body) physical condition as good as new?',
+						type:2,						
+						noOfSubAttributes:4,
+						typeOfWeightage:'percent',
+						answer:1,
+						subAttributes:
+						[
+								
+								{
+									ques:'1-2 scratches on screen'
+									id:'01',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Heavy scratches on screen'
+									id:'02',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Damaged/ Torn screen on edges'
+									id:'03',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Screen cracked/ glass broken'
+									id:'04',
+									answer:1
+									weightage:0.4
+								},
+							
+						]
+					}
+					{
+						ques_id:'q017',
+						ques:'Does it have scratches on phone body(not screen)?',
+						type:2,						
+						noOfSubAttributes:2,
+						typeOfWeightage:'percent',
+						answer:1,
+						subAttributes:
+						[
+								
+								{
+									ques:'2 or less minor scratches'
+									id:'02',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Major scratches'
+									id:'02',
+									answer:1
+									weightage:0.4
+								},
+							
+						]
+					}
+					{
+						ques_id:'q018',
+						ques:'Does it have dents?',
+						type:2,						
+						noOfSubAttributes:2,
+						typeOfWeightage:'percent',
+						answer:1,
+						subAttributes:
+						[
+								
+								{
+									ques:'2 or less minor body dents'
+									id:'02',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Multiple/heavy visible body dents'
+									id:'02',
+									answer:1
+									weightage:0.4
+								},
+							
+						]
+					}
+					{
+						ques_id:'q019',
+						ques:'is the back/side panel defected?',
+						type:2,						
+						noOfSubAttributes:2,
+						typeOfWeightage:'percent',
+						answer:1,
+						subAttributes:
+						[
+								
+								{
+									ques:'Missing side or back panel'
+									id:'02',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Cracked/ broken side or back panel'
+									id:'02',
+									answer:1
+									weightage:0.4
+								},
+							
+						]
+					}
+					{
+						ques_id:'q020',
+						ques:'is the phone bent or there is a loose screen?',
+						type:2,						
+						noOfSubAttributes:2,
+						typeOfWeightage:'percent',
+						answer:1,
+						subAttributes:
+						[
+								
+								{
+									ques:'Bent/ curved panel'
+									id:'02',
+									answer:0
+									weightage:0.2
+								},
+								{
+									ques:'Loose screen (Gap in screen and body)'
+									id:'02',
+									answer:1
+									weightage:0.4
+								},
+							
+						]
+					}

@@ -124,9 +124,6 @@ export const qeus=[
 						type:2,
 						typeOfWeightage:'percent',
 						weightage:0.5,					
-					},
-
-		
-					
+					},				
 					
 ];
