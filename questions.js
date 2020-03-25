@@ -1,0 +1,40 @@
+export const qeus=[
+	{
+		ques_id:'q101',
+		ques:'Is your screen working fine?',
+		answers:
+		[
+			{
+				sides_not_working:
+					{
+						id:'sides',
+						value:true
+					},
+				lines_are_there:
+					{
+						id:'lines',
+						value:true
+					}
+			}
+		]
+	},
+	{
+		ques_id:'q104',
+		ques:'Is your camera responsive?',
+		answers:
+		[
+			{
+				front_not_working:
+					{
+						id:'front',
+						value:false
+					},
+				rear_not_working:
+					{
+						id:'rear',
+						value:true
+					}
+			}
+		]
+	}
+];
