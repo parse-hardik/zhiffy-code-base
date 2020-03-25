@@ -1,4 +1,4 @@
-export const attribs=[
+const attribs=[
 	{
 		attrib_id:'a258',
 		ques:'Is your screen working fine?',
@@ -38,3 +38,5 @@ export const attribs=[
 		]
 	}
 ];
+
+module.exports={attribs:attribs};
