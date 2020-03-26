@@ -3,8 +3,6 @@
 //2=child.if parent ka child exists then the weightage of prent will b 0
 
 const database=
-{
-	productType:'Mobile Phones',
 	[
 
 		{
@@ -155,5 +153,5 @@ const database=
 			weightage:0.5,					
 		}					
 	];
-}
+
 module.exports={database:database}
