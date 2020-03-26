@@ -1,14 +1,23 @@
 const {database} = require('./Database.js');
-// const {ques} = require('./questions.js');
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const cors = require('cors');
+var connection = require('./config.js').mongooseConnection;
 
 var app = express();
 
+app.use('/admin', require('./admin'))
 app.use(cors({origin: true, credentials: true}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+mongoose.set('useFindAndModify', false);
+DATABASE_CONNECTION = connection;
+
+mongoose.connect(DATABASE_CONNECTION,{useNewUrlParser: true});
 
 /*
 	Input format will be something like this.
