@@ -1,23 +1,40 @@
 const AdminBro = require('admin-bro')
 const AdminBroExpress = require('admin-bro-expressjs')
 const AdminBroMongoose = require('admin-bro-mongoose')
-
-const User = require('./Test')
+const mongoose = require('mongoose');
+const Questions = require('./Questions')
+const Products = require('./Products')
 
 AdminBro.registerAdapter(AdminBroMongoose)
 const adminBro = new AdminBro({
   rootPath: '/admin',
   resources: [
     {
-      resource: User,
+      resource: Questions,
       options: {
-        properties: {
-      name: { isVisible: { list: true, filter: true, show: true, edit: false } },
-      email: { isVisible: { list: true, filter: true, show: true, edit: false } },
-      password: { isVisible: { list: false, filter: false, show: false, edit: false } },
-      avatar_url: { isVisible: { list: false, filter: false, show: true, edit: false } },
-      bio: { isVisible: { list: false, filter: false, show: true, edit: true } },
-    }
+        listProperties: ['ques_id','ques', 'Product_type' ,'type','typeOfWeightage', 'Weightage'],
+        properties:{
+          type:{
+              availableValues:[
+                {value:"1" ,label :"1"},
+                {value:"2", label :"2"},
+                {value:"3", label :"3"}
+              ]
+          },
+          typeOfWeightage:{
+             availableValues:[
+                {value:"absolute" ,label :"Absolute"},
+                {value:"percent", label :"Percent"} 
+                ]
+          }
+        }
+        
+      }
+    },
+    {
+      resource :Products,
+      options : {
+        listProperties : ['product'],
       }
     }
   ],
