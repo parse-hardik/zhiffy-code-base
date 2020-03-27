@@ -71,6 +71,10 @@ app.post('/giveInputs',(req,res)=>{
 	// res.send(database);
 })
 
+app.get("/",(req,res)=>{
+	res.send('hi');
+});
+
 app.listen(3000,()=>{
 	console.log('server working on 3000');
 })

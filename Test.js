@@ -1,14 +1,11 @@
 const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
-  name: { type: String, required: true },
+  username: { type: String, required: true },
   email: { type: String, required: true },
-  password: { type: String, required: true },
+  encryptedPassword: { type: String, required: true },
   avatar_url: { type: String },
-  bio: { type: String },
-
-  created_at: { type: Date, default: Date.now() },
-  updated_at: { type: Date, default: Date.now() },
+  role: { type: String, enum: ['admin', 'restricted'], required: true },
 });
 
 // Update the updated_at field on save
@@ -17,4 +14,4 @@ userSchema.pre('save', (next) => {
   next()
 })
 
-module.exports = Test = mongoose.model('Test', userSchema);
+module.exports = NewUser = mongoose.model('NewUser', userSchema);
